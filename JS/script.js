@@ -30,22 +30,29 @@
 //   90,
 //   100,
 //   "Hello",
-//   true,                                              <<7.2 DZ
+//   true,                                         //<<7.2 DZ
 //   false,
 //   null,
 //   undefined,
 //   { name: "Vlad" },
 //   [1, 2, 3],
 // ];
-
 // const sum = (arrForSum) => {
-//   const result = arrForSum.reduce((acc, item) => {
-//     if (typeof item === "number") {
-//       acc += item;
-//     }
-//     return acc;
-//   }, 0);
-//   return result;
+//   const result = arrForSum.reduce(
+//     (acc, item) => {
+//       if (typeof item === "number") {
+//         acc.sum += item;
+//         acc.count++;
+//       }
+//       return acc;
+//     },
+//     {
+//       sum: 0,
+//       count: 0,
+//     },
+//   );
+
+//   return result.sum / result.count;
 // };
 
 // const result = sum(arr);
