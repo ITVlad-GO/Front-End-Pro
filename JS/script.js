@@ -1,20 +1,19 @@
-let ladder = {
-  step: 0,
+const table = document.querySelector(".table");
+const btn = document.querySelector(".btn");
 
-  up() {
-    this.step++;
-    return this;
-  },
+btn.addEventListener("click", (event) => {
+  table.innerHTML = "";
+  for (let i = 1; i <= 10; i++) {
+    const newRow = document.createElement("tr");
 
-  down() {
-    this.step--;
-    return this;
-  },
+    for (let j = 1; j <= 10; j++) {
+      const newTd = document.createElement("td");
 
-  showStep() {
-    console.log(this.step);
-    return this;
+      newTd.textContent = i * j;
+
+      newRow.append(newTd);
+    }
+    table.append(newRow);
   }
-};
-
-ladder.up().up().down().showStep();                  // << 9.1 DZ
+  
+});
