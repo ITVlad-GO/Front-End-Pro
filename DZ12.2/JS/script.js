@@ -5,3 +5,4 @@ btn.addEventListener("click", (event) => {
     alert(`Було натиснуто на : ${event.target.textContent}`);
   }
 });
+ 
