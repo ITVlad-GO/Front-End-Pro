@@ -8,23 +8,23 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Список завдань:</h1>
+    <div class="toDoList">
+      <h1>Мій список завдань</h1>
 
-      <ul id="task-list" class="task-list">
+      <input type="text" id="taskInput" placeholder="Введіть завдання" />
+      <button class="addTask">Додати</button>
 
+      <ul class="taskList">
+        <li>
+          Вивчити JavaScript
+          <button class="delete">Видалити</button>
+        </li>
+
+        <li>
+          Вивчити делегування
+          <button class="delete">Видалити</button>
+        </li>
       </ul>
-      
-      <div class="form">
-        <input
-          type="text"
-          id="task-input"
-          class="task-input"
-          placeholder="Введіть нове завдання"
-        />
-
-        <button id="add-task" class="add-task-btn">Додати</button>
-      </div>
     </div>
     <script src="./JS/script.js"></script>
   </body>
